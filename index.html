@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="script.js" defer></script>
+    <title>Notes App</title>
+</head>
+<body>
+    <h1>Notes</h1>
+    <div id="container">
+        <form id="search-form">
+            <h5>Note Title:</h5>
+                <input type="text" id="note-title">
+            <h5>Note Text:</h5>
+                <input type="text" id="note-text" required>
+            <h5>Tags:</h5>
+            <div id="tags">
+                <input type="text" placeholder="enter tags separated by commas" optional>
+            </div>
+            <button id="add-note-button" type="submit">Add Note</button> 
+        </form>
+        <div id="notes-list"></div>
+    </div>
+</body>
+</html>

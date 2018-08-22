@@ -1,0 +1,49 @@
+#container, h1 {
+    max-width: 70%;
+    margin: 20px auto;
+    
+}
+
+h5 {
+    padding: 10px 0px;
+}
+
+#add-note-button {
+    margin: 15px;
+}
+
+/* addNoteToPage(note)
+for (let note of notes) {
+  let noteDivs = createNoteDivsDOM(note)
+}
+
+noteDivs(note).innerHTML = ''
+noteDivs(note).appendChild(note) */
+
+/* document.getElementById('add-note-button').addEventListener('click', event => {
+    addNoteToPage()
+  })
+  
+  function addNoteToPage (note) {
+    let section = document.getElementById('notes-list')
+    let list = section.querySelector('notes-div')
+    let noteList = createNoteDivsDOM(note)
+    list.appendChild(noteList)
+  } */
+
+  /* let deleteLink = document.getElementByTagName('a')
+  deleteLink.href = '#'
+  deleteLink.style.paddingLeft = '0.5rem'
+  deleteLink.classList.add('text-danger')
+  deleteLink.innerText = 'x'
+  deleteLink.addEventListener('click', event => {
+    deleteNote(note)
+  })
+  noteList.appendChild(deleteLink) */
+
+  /* function deleteNote (note) {
+    request.delete(`https://notes-api.glitch.me/api/notes${note._id}`)
+      .then(response => {
+        document.getElementById(`note-${note._id}`).remove()
+      })
+  } */
