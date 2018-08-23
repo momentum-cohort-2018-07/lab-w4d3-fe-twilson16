@@ -12,38 +12,25 @@ h5 {
     margin: 15px;
 }
 
-/* addNoteToPage(note)
-for (let note of notes) {
-  let noteDivs = createNoteDivsDOM(note)
+.text-danger {
+    vertical-align: top;
+    font-size: 1.5rem;
+    display: inline-block;
+    padding: 10px 0px;
+
 }
 
-noteDivs(note).innerHTML = ''
-noteDivs(note).appendChild(note) */
+.title, .text , .tags{
+    padding: 5px 0px;
+    margin: 0px;
+}
 
-/* document.getElementById('add-note-button').addEventListener('click', event => {
-    addNoteToPage()
-  })
-  
-  function addNoteToPage (note) {
-    let section = document.getElementById('notes-list')
-    let list = section.querySelector('notes-div')
-    let noteList = createNoteDivsDOM(note)
-    list.appendChild(noteList)
-  } */
+.note {
+    width: 90%;
+    display: inline-block;
+    padding: 10px 0px;
+    border-bottom: solid 1px black;
+}
 
-  /* let deleteLink = document.getElementByTagName('a')
-  deleteLink.href = '#'
-  deleteLink.style.paddingLeft = '0.5rem'
-  deleteLink.classList.add('text-danger')
-  deleteLink.innerText = 'x'
-  deleteLink.addEventListener('click', event => {
-    deleteNote(note)
-  })
-  noteList.appendChild(deleteLink) */
 
-  /* function deleteNote (note) {
-    request.delete(`https://notes-api.glitch.me/api/notes${note._id}`)
-      .then(response => {
-        document.getElementById(`note-${note._id}`).remove()
-      })
-  } */
+  /* let tagSort = document.getElementById('tags').value.split(',').map(tags => tags.trim()) */
