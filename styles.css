@@ -1,0 +1,36 @@
+#container, h1 {
+    max-width: 70%;
+    margin: 20px auto;
+    
+}
+
+h5 {
+    padding: 10px 0px;
+}
+
+#add-note-button {
+    margin: 15px;
+}
+
+.text-danger {
+    vertical-align: top;
+    font-size: 1.5rem;
+    display: inline-block;
+    padding: 10px 0px;
+
+}
+
+.title, .text , .tags{
+    padding: 5px 0px;
+    margin: 0px;
+}
+
+.note {
+    width: 90%;
+    display: inline-block;
+    padding: 10px 0px;
+    border-bottom: solid 1px black;
+}
+
+
+  
