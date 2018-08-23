@@ -3,7 +3,7 @@ import 'shoelace-css/dist/shoelace.css'
 import './styles.css'
 
 request.get('https://notes-api.glitch.me/api/notes')
-  .auth('twilson', 'password1')
+  .auth('user', 'password')
   .then(response => {
     let results = response.body.notes
     console.log(results)
@@ -20,15 +20,13 @@ document.getElementById('add-note-button').addEventListener('submit', event => {
   }
 
   request.post('https://notes-api.glitch.me/api/notes')
-    .auth('twilson', 'password1')
-    .send()
+    .auth('user', 'password')
     .send(noteData)
     .then(response => {
-      document.getElementById('note-title').reset()
-      document.getElementById('note-text').reset()
-      document.getElementById('tags').reset()
+      document.getElementById('search-form').reset()
       let results = response.body.notes
       createNoteDivsDOM(results)
+      console.log('hi')
     })
 })
 
@@ -42,7 +40,6 @@ function createNoteDivsDOM (results) {
     document.getElementById('notes-list').appendChild(noteList)
     let deleteLink = document.createElement('a')
     deleteLink.href = '#'
-    // deleteLink.style.paddingLeft = '0.5rem'
     deleteLink.classList.add('text-danger')
     deleteLink.innerText = 'x'
     deleteLink.addEventListener('click', event => {
@@ -65,6 +62,9 @@ function deleteNote (result) {
 //         isMoment('MMMM Do YYYY, h:mm:ss a').sort()
 //     }
 // }
+
+/* let tagSort = document.getElementById('tags').value.split(',').map(tags => tags.trim()) */
+
 // 6. Add event listener to create the JS object you need to create a new note and log it
 // 7. Add Ajax POST to create note on the server and add code to add note to page
 // 8. Add ability to delete notes with Ajax
